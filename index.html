@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Volume Bangun Ruang</title>
+</head>
+<body>
+
+<h2>Perhitungan Volume Bangun Ruang</h2>
+
+<button onclick="volumeBalok()">Volume Balok</button>
+<button onclick="volumeTabung()">Volume Tabung</button>
+<button onclick="volumeBola()">Volume Bola</button>
+<button onclick="volumePrisma()">Volume Prisma Segitiga</button>
+<button onclick="volumeKerucut()">Volume Kerucut</button>
+
+<script>
+    // Volume Balok
+    function volumeBalok() {
+        var panjang = prompt("Masukkan Panjang:");
+        var lebar = prompt("Masukkan Lebar:");
+        var tinggi = prompt("Masukkan Tinggi:");
+
+        var volume = panjang * lebar * tinggi;
+        alert("Volume Balok = " + volume);
+    }
+
+    // Volume Tabung
+    function volumeTabung() {
+        var jejari = prompt("Masukkan Jejari:");
+        var tinggi = prompt("Masukkan Tinggi:");
+
+        var volume = 3.14 * jejari * jejari * tinggi;
+        alert("Volume Tabung = " + volume);
+    }
+
+    // Volume Bola
+    function volumeBola() {
+        var jejari = prompt("Masukkan Jejari:");
+
+        var volume = 3.14 * jejari * jejari * jejari;
+        alert("Volume Bola = " + volume);
+    }
+
+    // Volume Prisma Segitiga
+    function volumePrisma() {
+        var panjangAlas = prompt("Masukkan Panjang Alas:");
+        var tinggiPrisma = prompt("Masukkan Tinggi Prisma:");
+
+        var volume = panjangAlas * tinggiPrisma;
+        alert("Volume Prisma Segitiga = " + volume);
+    }
+
+    // Volume Kerucut
+    function volumeKerucut() {
+        var tinggiAlas = prompt("Masukkan Tinggi Alas:");
+        var jejariAlas = prompt("Masukkan Jejari Alas:");
+        var tinggiKerucut = prompt("Masukkan Tinggi Kerucut:");
+
+        var volume = 0.5 * tinggiAlas * jejariAlas * tinggiKerucut;
+        alert("Volume Kerucut = " + volume);
+    }
+</script>
+
+</body>
+</html>
